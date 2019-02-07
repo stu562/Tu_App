@@ -10,21 +10,6 @@ const productSchema = new mongoose.Schema({
   keywords: String,
 });
 
-let product = mongoose.model('product', repoSchema);
+let item = mongoose.model('product', productSchema);
 
-module.exports = product;
-
-
-// var newProduct = new Schema({ 
-//   id: Number,
-//   name: String,
-//   price: Number,
-//   url: String,
-//   qty: Number,
-//   type: String,
-// });
-
-  // assign a function to the "methods" object of our animalSchema
-  // newProduct.findSimilarTypes = function(cb) {
-  //   return this.model('Animal').find({ type: this.type }, cb);
-  // };
+module.exports = item;

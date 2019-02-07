@@ -1,4 +1,4 @@
-const product = require('/index.js');
+const item = require('/index.js');
 const mongoose = require('mongoose');
 
 //randomizer helper functon
@@ -52,3 +52,5 @@ function savingDB(){
 }
 
 savingDB();
+
+module.exports = { product };
