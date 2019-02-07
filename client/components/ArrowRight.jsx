@@ -9,7 +9,3 @@ const RightArrow = () => {
 }
 
 export default RightArrow;
-
-/* 
-  Pretend these are in their own separate files 
-*/
