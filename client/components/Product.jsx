@@ -4,3 +4,5 @@
   //the image
   //the name
   //the price
+
+  import React from 'react';

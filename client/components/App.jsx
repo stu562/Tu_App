@@ -1,10 +1,17 @@
 import React from 'react';
-
+// import from './Product.jsx';
+// import from './ProductList.jsx';
 
 class App extends React.Component{
   constructor(props){
     super(props);
-    this.state = {};
+    this.state = {
+      productOne: [],
+      productTwo: [],
+      productThree: [],
+      currentIndex: 0,
+      translateValue: 0
+      };
 
     this.handleOnclickLeft = this.handleOnclickLeft.bind(this);
     this.handleOnclickRight = this.handleOnclickRight.bind(this);
@@ -20,7 +27,7 @@ class App extends React.Component{
   render() {
     return(
       <div>
-        
+
       </div>
     )
   }

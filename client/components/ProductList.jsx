@@ -4,3 +4,6 @@
 
 //You may also like
   // 5 similar products, no carosel
+
+
+  import React from 'react';
