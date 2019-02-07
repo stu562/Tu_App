@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "./styles.css";
 // import from './Product.jsx';
 // import from './ProductList.jsx';
 
@@ -27,7 +28,10 @@ class App extends React.Component{
   render() {
     return(
       <div>
-
+        <div class="similar-items">SIMILAR ITEMS </div>
+          
+        <div class="like-items">YOU MAY ALSO LIKE </div>
+        
       </div>
     )
   }
