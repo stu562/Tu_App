@@ -21,6 +21,17 @@ module.exports = {
       {
         test: /\.css$/,
         loader: "style-loader!css-loader?modules=true&localIdentName=[name]__[local]___[hash: base64: 5]"
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
       }
     ]
   },
