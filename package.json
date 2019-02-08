@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest ./client/components/App.test.js",
     "build": "webpack --watch",
     "start": "nodemon ./server/index.js"
   },
@@ -39,8 +39,11 @@
     "webpack-cli": "^3.2.3"
   },
   "devDependencies": {
+    "babel-jest": "^24.1.0",
     "css-loader": "^2.1.0",
+    "jest": "^24.1.0",
     "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.2"
   }
 }
