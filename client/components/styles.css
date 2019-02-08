@@ -1,18 +1,5 @@
-.similar-items{
+.similar{
   font-size: 48px;
-  text-align: center;
-  font-family: Helvetica,Arial,sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  word-spacing: 5px;
-  margin: 16px 0 30px;
-  border-top: 1px solid #000;
-  padding-top: 30px;
-}
-
-
-.like-items{
-    font-size: 48px;
     text-align: center;
     font-family: Helvetica,Arial,sans-serif;
     text-transform: uppercase;
@@ -21,4 +8,9 @@
     margin: 16px 0 30px;
     border-top: 1px solid #000;
     padding-top: 30px;
+}
+.product{
+  /* display: flex; */
+  padding:20px;
+
 }
