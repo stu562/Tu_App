@@ -7,11 +7,14 @@ import styles from "./styles.css";
 import Slide from './slide';
 import LeftArrow from './ArrowLeft';
 import RightArrow from './ArrowRight';
+import Product from './ProductTile.jsx';
 
 class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
+      // properties:data.properties,
+      // property:data.properties[0],
       products:[],
       currentIndex: 0,
       translateValue: 0
@@ -22,24 +25,17 @@ class App extends React.Component{
   }
   handleOnclickRight(){
     //should handle rotation of carosuel
-    this.setState(nextState => ({
-      currentIndex: nextState.currentIndex + 1
-    }));
+    const newIndex = this.state.property.index + 1;
+    this.setState({
+      property: data.properties[newIndex]
+    });
   }
   handleOnclickLeft(){
     //should handle rotation of carosuel
-    if(this.state.currentIndex === this.state.images.length - 1) {
-      return this.setState({
-        currentIndex: 0,
-        translateValue: 0
-      })
-    }
-    
-    // This will not run if we met the if condition above
-    this.setState(prevState => ({
-      currentIndex: prevState.currentIndex + 1,
-      translateValue: prevState.translateValue + - (this.slideWidth())
-    }));
+    const newIndex = this.state.property.index - 1;
+    this.setState({     
+      property: data.properties[newIndex]
+    });
   }
 
 
@@ -47,10 +43,8 @@ class App extends React.Component{
     return(
       <div>
         <div className={styles.similar}>Similar Items</div>
-        <span><img className={styles.product} src="https://s3-us-west-1.amazonaws.com/oiu-qln-products/similar+photo/goods_01_416612.jpeg"/></span>
-        <span><img className={styles.product} src="https://s3-us-west-1.amazonaws.com/oiu-qln-products/similar+photo/goods_01_416612.jpeg"/></span>
-        <span><img className={styles.product} src="https://s3-us-west-1.amazonaws.com/oiu-qln-products/similar+photo/goods_01_416612.jpeg"/></span>
-
+        <Product />
+        
         <div className={styles.similar}>YOU MAY ALSO LIKE </div>
         <span><img className={styles.product} src="https://s3-us-west-1.amazonaws.com/oiu-qln-products/similar+photo/goods_01_416612.jpeg"/></span>
         <span><img className={styles.product} src="https://s3-us-west-1.amazonaws.com/oiu-qln-products/similar+photo/goods_01_416612.jpeg"/></span>
@@ -81,6 +75,7 @@ class App extends React.Component{
                 <RightArrow next={this.handleOnclickRight}/>
       
           </div>
+          
 
       
       </div>

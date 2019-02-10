@@ -9,8 +9,39 @@
     border-top: 1px solid #000;
     padding-top: 30px;
 }
-.product{
+.productTitle{
   /* display: flex; */
   padding:20px;
+  
+}
+.productName{
+  text-align: left;
+  font-size: 14.13px;
+  line-height: 17.13px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: .5px;
+  color: #000;
+  margin: 0;
+  font-family: UniqloProBold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.productPrice{
+  float:left;
+  font-size: 12px;
+  line-height: 17.13px;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: .5px;
+  color: #000000;
+  margin: 0;
+  font-family: UniqloProBold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  width: 30%;
+  margin: 0;
+  text-align: right;
+  font-weight: 400;
 
+}
+
+.slider{
+  flex-direction: row;
 }
